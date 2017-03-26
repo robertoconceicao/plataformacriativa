@@ -1,0 +1,28 @@
+<div class="container center">    
+    <form (ngSubmit)="continuar()" #formCalc="ngForm">
+        <ul>
+            <li>
+                <label>Faturamento</label>
+            </li>
+            <li>
+              <input type="text" class="form-control disabled" id="valorReal"
+                  [(ngModel)]="valorReal" name="valorReal" readonly="true">
+            </li>
+            <li>
+                <label>ISS</label>
+            </li>
+            <li>
+              
+            </li>
+            <li>
+                <label>ICMS</label>
+            </li>
+            <li>
+              
+            </li>
+        </ul>
+        <p align="right">
+            <button type="submit" class="btn btn-default" [disabled]="submitted">Continuar</button>
+        </p>
+    </form>
+</div>

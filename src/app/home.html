@@ -1,0 +1,37 @@
+<div class="container center">    
+    <form (ngSubmit)="continuar()" #formCalc="ngForm">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" class="form-control" id="valor" required
+                        [(ngModel)]="valor" name="valor" placeholder="Faturamento">
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    <select ng-model="regime" required>
+                        <option value="" selected="selected">Regime Tributaril</option>
+                        <option value="0">Simples</option>
+                        <option value="1">Lucro Presumido</option>
+                        <option value="2">Lucro Real</option>
+                    </select>
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    <select ng-model="categoria" required>
+                        <option value="" selected="selected">Categoria</option>
+                        <option value="0">Indústria</option>
+                        <option value="1">Serviço</option>
+                        <option value="2">Indústria e Serviço</option>
+                    </select>
+                </td>
+            </tr>
+            <tr align="right">
+                <td>
+                    <button type="submit" class="btn btn-default" [disabled]="submitted">Continuar</button>
+                </td>
+            </tr>
+        </table>        
+    </form>
+</div>

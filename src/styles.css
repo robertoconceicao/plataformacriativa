@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+.center{
+  left: 50%;
+  top: 10%;
+  margin-left: -200px; /* A metade de sua largura. */
+  position: absolute;
+  width: 400px;
+}
